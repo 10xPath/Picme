@@ -8,11 +8,52 @@
 
 /* Begin PBXBuildFile section */
 		2C7FC8921AD0FF8800E9E873 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7FC8911AD0FF8800E9E873 /* AppDelegate.swift */; };
-		2C7FC8941AD0FF8800E9E873 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7FC8931AD0FF8800E9E873 /* ViewController.swift */; };
 		2C7FC8971AD0FF8800E9E873 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C7FC8951AD0FF8800E9E873 /* Main.storyboard */; };
 		2C7FC8991AD0FF8800E9E873 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C7FC8981AD0FF8800E9E873 /* Images.xcassets */; };
 		2C7FC89C1AD0FF8800E9E873 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C7FC89A1AD0FF8800E9E873 /* LaunchScreen.xib */; };
 		2C7FC8A81AD0FF8800E9E873 /* PicmeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7FC8A71AD0FF8800E9E873 /* PicmeTests.swift */; };
+		2C7FC8B91AD1028900E9E873 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C7FC8B81AD1028900E9E873 /* SWRevealViewController.m */; };
+		2C7FC8C11AD1038F00E9E873 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C7FC8BB1AD1038F00E9E873 /* Parse.framework */; };
+		2C7FC8C51AD1038F00E9E873 /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C7FC8BF1AD1038F00E9E873 /* ParseUI.framework */; };
+		2C7FC8D21AD1044B00E9E873 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C7FC8C71AD1044B00E9E873 /* CFNetwork.framework */; };
+		2C7FC8D31AD1044B00E9E873 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C7FC8C81AD1044B00E9E873 /* CoreGraphics.framework */; };
+		2C7FC8D41AD1044B00E9E873 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C7FC8C91AD1044B00E9E873 /* CoreLocation.framework */; };
+		2C7FC8D51AD1044B00E9E873 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C7FC8CA1AD1044B00E9E873 /* libsqlite3.dylib */; };
+		2C7FC8D61AD1044B00E9E873 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C7FC8CB1AD1044B00E9E873 /* libz.dylib */; };
+		2C7FC8D71AD1044B00E9E873 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C7FC8CC1AD1044B00E9E873 /* MobileCoreServices.framework */; };
+		2C7FC8D81AD1044B00E9E873 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C7FC8CD1AD1044B00E9E873 /* QuartzCore.framework */; };
+		2C7FC8D91AD1044B00E9E873 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C7FC8CE1AD1044B00E9E873 /* Security.framework */; };
+		2C7FC8DA1AD1044B00E9E873 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C7FC8CF1AD1044B00E9E873 /* StoreKit.framework */; };
+		2C7FC8DB1AD1044B00E9E873 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C7FC8D01AD1044B00E9E873 /* SystemConfiguration.framework */; };
+		2C7FC8DD1AD104A500E9E873 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C7FC8DC1AD104A500E9E873 /* AudioToolbox.framework */; };
+		2C7FC8DF1AD1083400E9E873 /* SigninViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7FC8DE1AD1083400E9E873 /* SigninViewController.swift */; };
+		2C7FC8E11AD1084500E9E873 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7FC8E01AD1084500E9E873 /* SignupViewController.swift */; };
+		2C7FC8E41AD10A2600E9E873 /* FooterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7FC8E31AD10A2600E9E873 /* FooterTableViewCell.swift */; };
+		2C7FC8E61AD10A4500E9E873 /* LoadTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7FC8E51AD10A4500E9E873 /* LoadTableViewCell.swift */; };
+		2C7FC8E81AD1166400E9E873 /* EncryptionMD5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7FC8E71AD1166400E9E873 /* EncryptionMD5.swift */; };
+		2C7FC8EA1AD11C0900E9E873 /* FeedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7FC8E91AD11C0900E9E873 /* FeedTableViewController.swift */; };
+		2C7FC8EC1AD11E0A00E9E873 /* BodyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7FC8EB1AD11E0A00E9E873 /* BodyTableViewCell.swift */; };
+		2C7FC8EE1AD125B500E9E873 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7FC8ED1AD125B500E9E873 /* ColorExtension.swift */; };
+		2C7FC8F01AD1267200E9E873 /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7FC8EF1AD1267200E9E873 /* NavigationViewController.swift */; };
+		2C7FC8F21AD1292600E9E873 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C7FC8F11AD1292600E9E873 /* MapKit.framework */; };
+		2C7FC8F41AD18FD600E9E873 /* GoogleMaps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C7FC8F31AD18FD600E9E873 /* GoogleMaps.framework */; };
+		2C7FC8F61AD1901200E9E873 /* GoogleMaps.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2C7FC8F51AD1901200E9E873 /* GoogleMaps.bundle */; };
+		2C7FC8FF1AD191A400E9E873 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C7FC8F71AD191A400E9E873 /* AVFoundation.framework */; };
+		2C7FC9001AD191A400E9E873 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C7FC8F81AD191A400E9E873 /* CoreData.framework */; };
+		2C7FC9011AD191A400E9E873 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C7FC8F91AD191A400E9E873 /* CoreText.framework */; };
+		2C7FC9021AD191A400E9E873 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C7FC8FA1AD191A400E9E873 /* GLKit.framework */; };
+		2C7FC9031AD191A400E9E873 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C7FC8FB1AD191A400E9E873 /* ImageIO.framework */; };
+		2C7FC9041AD191A400E9E873 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C7FC8FC1AD191A400E9E873 /* libc++.dylib */; };
+		2C7FC9051AD191A400E9E873 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C7FC8FD1AD191A400E9E873 /* libicucore.dylib */; };
+		2C7FC9061AD191A400E9E873 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C7FC8FE1AD191A400E9E873 /* OpenGLES.framework */; };
+		2C7FC9081AD1985500E9E873 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7FC9071AD1985500E9E873 /* MapViewController.swift */; };
+		2C7FC90A1AD1BF3700E9E873 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C7FC9091AD1BF3700E9E873 /* FBSDKCoreKit.framework */; };
+		2C7FC90C1AD1C1A500E9E873 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C7FC90B1AD1C1A500E9E873 /* Bolts.framework */; };
+		2C7FC90E1AD1C38D00E9E873 /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C7FC90D1AD1C38D00E9E873 /* Twitter.framework */; };
+		2C7FC9111AD1C9B600E9E873 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C7FC90F1AD1C9B600E9E873 /* Accounts.framework */; };
+		2C7FC9121AD1C9B600E9E873 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C7FC9101AD1C9B600E9E873 /* Social.framework */; };
+		2C7FC9151AD1CDFE00E9E873 /* eventInfo.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C7FC9141AD1CDFE00E9E873 /* eventInfo.xib */; };
+		2C7FC9171AD1E74D00E9E873 /* CustomInfoWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7FC9161AD1E74D00E9E873 /* CustomInfoWindow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,13 +70,56 @@
 		2C7FC88C1AD0FF8800E9E873 /* Picme.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Picme.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C7FC8901AD0FF8800E9E873 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2C7FC8911AD0FF8800E9E873 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2C7FC8931AD0FF8800E9E873 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2C7FC8961AD0FF8800E9E873 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2C7FC8981AD0FF8800E9E873 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		2C7FC89B1AD0FF8800E9E873 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		2C7FC8A11AD0FF8800E9E873 /* PicmeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PicmeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C7FC8A61AD0FF8800E9E873 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2C7FC8A71AD0FF8800E9E873 /* PicmeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PicmeTests.swift; sourceTree = "<group>"; };
+		2C7FC8B61AD1028800E9E873 /* Picme-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Picme-Bridging-Header.h"; sourceTree = "<group>"; };
+		2C7FC8B71AD1028900E9E873 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		2C7FC8B81AD1028900E9E873 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		2C7FC8BB1AD1038F00E9E873 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		2C7FC8BF1AD1038F00E9E873 /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseUI.framework; sourceTree = "<group>"; };
+		2C7FC8C71AD1044B00E9E873 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		2C7FC8C81AD1044B00E9E873 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2C7FC8C91AD1044B00E9E873 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		2C7FC8CA1AD1044B00E9E873 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		2C7FC8CB1AD1044B00E9E873 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		2C7FC8CC1AD1044B00E9E873 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		2C7FC8CD1AD1044B00E9E873 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		2C7FC8CE1AD1044B00E9E873 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		2C7FC8CF1AD1044B00E9E873 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		2C7FC8D01AD1044B00E9E873 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		2C7FC8DC1AD104A500E9E873 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		2C7FC8DE1AD1083400E9E873 /* SigninViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SigninViewController.swift; sourceTree = "<group>"; };
+		2C7FC8E01AD1084500E9E873 /* SignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		2C7FC8E31AD10A2600E9E873 /* FooterTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FooterTableViewCell.swift; sourceTree = "<group>"; };
+		2C7FC8E51AD10A4500E9E873 /* LoadTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadTableViewCell.swift; sourceTree = "<group>"; };
+		2C7FC8E71AD1166400E9E873 /* EncryptionMD5.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EncryptionMD5.swift; sourceTree = "<group>"; };
+		2C7FC8E91AD11C0900E9E873 /* FeedTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedTableViewController.swift; sourceTree = "<group>"; };
+		2C7FC8EB1AD11E0A00E9E873 /* BodyTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BodyTableViewCell.swift; sourceTree = "<group>"; };
+		2C7FC8ED1AD125B500E9E873 /* ColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
+		2C7FC8EF1AD1267200E9E873 /* NavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
+		2C7FC8F11AD1292600E9E873 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		2C7FC8F31AD18FD600E9E873 /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMaps.framework; sourceTree = "<group>"; };
+		2C7FC8F51AD1901200E9E873 /* GoogleMaps.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = GoogleMaps.framework/Versions/A/Resources/GoogleMaps.bundle; sourceTree = "<group>"; };
+		2C7FC8F71AD191A400E9E873 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		2C7FC8F81AD191A400E9E873 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		2C7FC8F91AD191A400E9E873 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		2C7FC8FA1AD191A400E9E873 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		2C7FC8FB1AD191A400E9E873 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		2C7FC8FC1AD191A400E9E873 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+		2C7FC8FD1AD191A400E9E873 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
+		2C7FC8FE1AD191A400E9E873 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		2C7FC9071AD1985500E9E873 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		2C7FC9091AD1BF3700E9E873 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		2C7FC90B1AD1C1A500E9E873 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		2C7FC90D1AD1C38D00E9E873 /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
+		2C7FC90F1AD1C9B600E9E873 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		2C7FC9101AD1C9B600E9E873 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		2C7FC9141AD1CDFE00E9E873 /* eventInfo.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = eventInfo.xib; sourceTree = "<group>"; };
+		2C7FC9161AD1E74D00E9E873 /* CustomInfoWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomInfoWindow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +127,34 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C7FC9111AD1C9B600E9E873 /* Accounts.framework in Frameworks */,
+				2C7FC9121AD1C9B600E9E873 /* Social.framework in Frameworks */,
+				2C7FC8DA1AD1044B00E9E873 /* StoreKit.framework in Frameworks */,
+				2C7FC90E1AD1C38D00E9E873 /* Twitter.framework in Frameworks */,
+				2C7FC90C1AD1C1A500E9E873 /* Bolts.framework in Frameworks */,
+				2C7FC8FF1AD191A400E9E873 /* AVFoundation.framework in Frameworks */,
+				2C7FC9001AD191A400E9E873 /* CoreData.framework in Frameworks */,
+				2C7FC9011AD191A400E9E873 /* CoreText.framework in Frameworks */,
+				2C7FC9021AD191A400E9E873 /* GLKit.framework in Frameworks */,
+				2C7FC9031AD191A400E9E873 /* ImageIO.framework in Frameworks */,
+				2C7FC9041AD191A400E9E873 /* libc++.dylib in Frameworks */,
+				2C7FC9051AD191A400E9E873 /* libicucore.dylib in Frameworks */,
+				2C7FC9061AD191A400E9E873 /* OpenGLES.framework in Frameworks */,
+				2C7FC8F41AD18FD600E9E873 /* GoogleMaps.framework in Frameworks */,
+				2C7FC8F21AD1292600E9E873 /* MapKit.framework in Frameworks */,
+				2C7FC8DD1AD104A500E9E873 /* AudioToolbox.framework in Frameworks */,
+				2C7FC8D21AD1044B00E9E873 /* CFNetwork.framework in Frameworks */,
+				2C7FC8D31AD1044B00E9E873 /* CoreGraphics.framework in Frameworks */,
+				2C7FC8D41AD1044B00E9E873 /* CoreLocation.framework in Frameworks */,
+				2C7FC8D51AD1044B00E9E873 /* libsqlite3.dylib in Frameworks */,
+				2C7FC8D61AD1044B00E9E873 /* libz.dylib in Frameworks */,
+				2C7FC8D71AD1044B00E9E873 /* MobileCoreServices.framework in Frameworks */,
+				2C7FC8D81AD1044B00E9E873 /* QuartzCore.framework in Frameworks */,
+				2C7FC8D91AD1044B00E9E873 /* Security.framework in Frameworks */,
+				2C7FC8DB1AD1044B00E9E873 /* SystemConfiguration.framework in Frameworks */,
+				2C7FC8C51AD1038F00E9E873 /* ParseUI.framework in Frameworks */,
+				2C7FC8C11AD1038F00E9E873 /* Parse.framework in Frameworks */,
+				2C7FC90A1AD1BF3700E9E873 /* FBSDKCoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,11 +189,14 @@
 		2C7FC88E1AD0FF8800E9E873 /* Picme */ = {
 			isa = PBXGroup;
 			children = (
+				2C7FC8B41AD1000400E9E873 /* Resources */,
+				2C7FC8B21AD0FFDA00E9E873 /* Views */,
+				2C7FC8B11AD0FFCD00E9E873 /* Frameworks */,
 				2C7FC8911AD0FF8800E9E873 /* AppDelegate.swift */,
-				2C7FC8931AD0FF8800E9E873 /* ViewController.swift */,
 				2C7FC8951AD0FF8800E9E873 /* Main.storyboard */,
 				2C7FC8981AD0FF8800E9E873 /* Images.xcassets */,
 				2C7FC89A1AD0FF8800E9E873 /* LaunchScreen.xib */,
+				2C7FC8B61AD1028800E9E873 /* Picme-Bridging-Header.h */,
 				2C7FC88F1AD0FF8800E9E873 /* Supporting Files */,
 			);
 			path = Picme;
@@ -91,6 +206,8 @@
 			isa = PBXGroup;
 			children = (
 				2C7FC8901AD0FF8800E9E873 /* Info.plist */,
+				2C7FC8E71AD1166400E9E873 /* EncryptionMD5.swift */,
+				2C7FC8ED1AD125B500E9E873 /* ColorExtension.swift */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -110,6 +227,100 @@
 				2C7FC8A61AD0FF8800E9E873 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2C7FC8B11AD0FFCD00E9E873 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2C7FC90F1AD1C9B600E9E873 /* Accounts.framework */,
+				2C7FC9101AD1C9B600E9E873 /* Social.framework */,
+				2C7FC90D1AD1C38D00E9E873 /* Twitter.framework */,
+				2C7FC90B1AD1C1A500E9E873 /* Bolts.framework */,
+				2C7FC9091AD1BF3700E9E873 /* FBSDKCoreKit.framework */,
+				2C7FC8FC1AD191A400E9E873 /* libc++.dylib */,
+				2C7FC8FD1AD191A400E9E873 /* libicucore.dylib */,
+				2C7FC8FE1AD191A400E9E873 /* OpenGLES.framework */,
+				2C7FC8F71AD191A400E9E873 /* AVFoundation.framework */,
+				2C7FC8F81AD191A400E9E873 /* CoreData.framework */,
+				2C7FC8F91AD191A400E9E873 /* CoreText.framework */,
+				2C7FC8FA1AD191A400E9E873 /* GLKit.framework */,
+				2C7FC8FB1AD191A400E9E873 /* ImageIO.framework */,
+				2C7FC8F51AD1901200E9E873 /* GoogleMaps.bundle */,
+				2C7FC8F31AD18FD600E9E873 /* GoogleMaps.framework */,
+				2C7FC8F11AD1292600E9E873 /* MapKit.framework */,
+				2C7FC8DC1AD104A500E9E873 /* AudioToolbox.framework */,
+				2C7FC8C71AD1044B00E9E873 /* CFNetwork.framework */,
+				2C7FC8C81AD1044B00E9E873 /* CoreGraphics.framework */,
+				2C7FC8C91AD1044B00E9E873 /* CoreLocation.framework */,
+				2C7FC8CA1AD1044B00E9E873 /* libsqlite3.dylib */,
+				2C7FC8CB1AD1044B00E9E873 /* libz.dylib */,
+				2C7FC8CC1AD1044B00E9E873 /* MobileCoreServices.framework */,
+				2C7FC8CD1AD1044B00E9E873 /* QuartzCore.framework */,
+				2C7FC8CE1AD1044B00E9E873 /* Security.framework */,
+				2C7FC8CF1AD1044B00E9E873 /* StoreKit.framework */,
+				2C7FC8D01AD1044B00E9E873 /* SystemConfiguration.framework */,
+				2C7FC8BB1AD1038F00E9E873 /* Parse.framework */,
+				2C7FC8BF1AD1038F00E9E873 /* ParseUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2C7FC8B21AD0FFDA00E9E873 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2C7FC8E21AD1086900E9E873 /* Cells */,
+				2C7FC8B31AD0FFED00E9E873 /* Controllers */,
+				2C7FC9161AD1E74D00E9E873 /* CustomInfoWindow.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		2C7FC8B31AD0FFED00E9E873 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2C7FC8B51AD101E300E9E873 /* SWRevealViewController */,
+				2C7FC8DE1AD1083400E9E873 /* SigninViewController.swift */,
+				2C7FC8E01AD1084500E9E873 /* SignupViewController.swift */,
+				2C7FC8E91AD11C0900E9E873 /* FeedTableViewController.swift */,
+				2C7FC8EF1AD1267200E9E873 /* NavigationViewController.swift */,
+				2C7FC9071AD1985500E9E873 /* MapViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		2C7FC8B41AD1000400E9E873 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2C7FC9131AD1CDBF00E9E873 /* Design */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		2C7FC8B51AD101E300E9E873 /* SWRevealViewController */ = {
+			isa = PBXGroup;
+			children = (
+				2C7FC8B71AD1028900E9E873 /* SWRevealViewController.h */,
+				2C7FC8B81AD1028900E9E873 /* SWRevealViewController.m */,
+			);
+			name = SWRevealViewController;
+			sourceTree = "<group>";
+		};
+		2C7FC8E21AD1086900E9E873 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				2C7FC8E31AD10A2600E9E873 /* FooterTableViewCell.swift */,
+				2C7FC8E51AD10A4500E9E873 /* LoadTableViewCell.swift */,
+				2C7FC8EB1AD11E0A00E9E873 /* BodyTableViewCell.swift */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		2C7FC9131AD1CDBF00E9E873 /* Design */ = {
+			isa = PBXGroup;
+			children = (
+				2C7FC9141AD1CDFE00E9E873 /* eventInfo.xib */,
+			);
+			name = Design;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,6 +372,7 @@
 				TargetAttributes = {
 					2C7FC88B1AD0FF8800E9E873 = {
 						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = FKH9NLYV4W;
 					};
 					2C7FC8A01AD0FF8800E9E873 = {
 						CreatedOnToolsVersion = 6.2;
@@ -195,6 +407,8 @@
 				2C7FC8971AD0FF8800E9E873 /* Main.storyboard in Resources */,
 				2C7FC89C1AD0FF8800E9E873 /* LaunchScreen.xib in Resources */,
 				2C7FC8991AD0FF8800E9E873 /* Images.xcassets in Resources */,
+				2C7FC8F61AD1901200E9E873 /* GoogleMaps.bundle in Resources */,
+				2C7FC9151AD1CDFE00E9E873 /* eventInfo.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,8 +426,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C7FC8941AD0FF8800E9E873 /* ViewController.swift in Sources */,
 				2C7FC8921AD0FF8800E9E873 /* AppDelegate.swift in Sources */,
+				2C7FC8F01AD1267200E9E873 /* NavigationViewController.swift in Sources */,
+				2C7FC8B91AD1028900E9E873 /* SWRevealViewController.m in Sources */,
+				2C7FC8E41AD10A2600E9E873 /* FooterTableViewCell.swift in Sources */,
+				2C7FC8EA1AD11C0900E9E873 /* FeedTableViewController.swift in Sources */,
+				2C7FC8E61AD10A4500E9E873 /* LoadTableViewCell.swift in Sources */,
+				2C7FC8E11AD1084500E9E873 /* SignupViewController.swift in Sources */,
+				2C7FC9081AD1985500E9E873 /* MapViewController.swift in Sources */,
+				2C7FC8E81AD1166400E9E873 /* EncryptionMD5.swift in Sources */,
+				2C7FC8DF1AD1083400E9E873 /* SigninViewController.swift in Sources */,
+				2C7FC8EC1AD11E0A00E9E873 /* BodyTableViewCell.swift in Sources */,
+				2C7FC8EE1AD125B500E9E873 /* ColorExtension.swift in Sources */,
+				2C7FC9171AD1E74D00E9E873 /* CustomInfoWindow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,6 +517,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -328,6 +554,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -338,9 +565,21 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Picme",
+				);
 				INFOPLIST_FILE = Picme/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Picme/Picme-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -348,9 +587,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Picme",
+				);
 				INFOPLIST_FILE = Picme/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Picme/Picme-Bridging-Header.h";
 			};
 			name = Release;
 		};
