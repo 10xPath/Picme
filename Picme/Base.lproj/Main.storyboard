@@ -206,7 +206,7 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.34170962560000001" green="0.5342398196" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <connections>
-                                            <segue destination="n7q-s1-pYH" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="vKi-la-Lkl"/>
+                                            <segue destination="8Xb-73-DLU" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="vKi-la-Lkl"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="x8y-EA-MeP">
@@ -359,6 +359,9 @@
                                         </imageView>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="6st-PT-fMO" kind="show" id="AfO-zq-vAI"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <sections/>
@@ -444,8 +447,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BeP-Qd-caC">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="225"/>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BeP-Qd-caC" customClass="GMSMapView">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="106"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Event Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tlk-IC-u38">
+                                        <rect key="frame" x="87" y="42" width="120" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                         </subviews>
@@ -455,7 +466,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ik1-go-Olu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2959" y="2098"/>
+            <point key="canvasLocation" x="3117" y="1250"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="kPw-6o-mSM">
@@ -481,11 +492,12 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="j2e-Cs-uLr"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZQf-eq-Vgh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1696" y="1910"/>
+            <point key="canvasLocation" x="2506" y="2024"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="XrO-Dg-44y">
@@ -504,6 +516,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w13-YP-diC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="743" y="1866"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="tBw-97-45X">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="8Xb-73-DLU" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="9Fm-cA-xLu">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="n7q-s1-pYH" kind="relationship" relationship="rootViewController" id="WmM-k5-UdR"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WmG-X7-14a" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1888" y="1988"/>
         </scene>
     </scenes>
     <resources>
