@@ -29,8 +29,8 @@ class SigninViewController: UIViewController {
         if(username.length == 0 && password.length == 0){
             
         }else{
-            PFUser.logInWithUsernameInBackground(username, password:password) {
-                (user: PFUser!, error: NSError!) -> Void in
+            PFUser.logInWithUsernameInBackground(username as String, password:password as String) {
+                (user, error) -> Void in
                 if user != nil {
                     print("To Feed")
                     
@@ -46,8 +46,9 @@ class SigninViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    override func touchesBegan(touches: NSSet, withEvent event: UIEvent) {
+    override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
         self.view.endEditing(true);
+
     }
     
 

@@ -16,53 +16,79 @@ let locationManager =  CLLocationManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         locationManager.delegate = self
         locationManager.requestWhenInUseAuthorization()
+        
         if self.revealViewController() != nil {
             menuButton.target = self.revealViewController()
             menuButton.action = "revealToggle:"
             self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         }
-        var camera = GMSCameraPosition.cameraWithLatitude(-33.86,
-            longitude: 151.20, zoom: 6)
+        
+        var camera = GMSCameraPosition.cameraWithLatitude(-47.6097,longitude: 122.3331, zoom: 6)
+        
         mapView = GMSMapView.mapWithFrame(CGRectZero, camera: camera)
         mapView.myLocationEnabled = true
         mapView.settings.myLocationButton = true
         
         self.view = mapView
+        
         let query : PFQuery = PFQuery(className: "Event")
-        query.findObjectsInBackgroundWithBlock {  (objects: [AnyObject]!, error: NSError!) -> Void in
+        query.findObjectsInBackgroundWithBlock {  (objects, error) -> Void in
             if error != nil {
                 // There was an error
             } else {
-                self.events = objects
+                self.events = objects!
                 self.setMarkerData()
             }
         }
         // Do any additional setup after loading the view.
     }
     
+    func locationManager(manager:CLLocationManager!, didChangeAuthorizationStatus status: CLAuthorizationStatus){
+        if status == .AuthorizedWhenInUse{
+            
+            locationManager.startUpdatingLocation()
+            
+            mapView.myLocationEnabled = true
+            mapView.settings.myLocationButton = true
+        }
+    }
+    
+    func locationManager(manager:CLLocationManager!, didUpdateLocations locations:[AnyObject]!){
+        if let location = locations.first as? CLLocation{
+            
+            mapView.camera = GMSCameraPosition(target:location.coordinate, zoom:15,bearing:0, viewingAngle:0)
+            locationManager.stopUpdatingLocation()
+        }
+    }
+    
     
     func setMarkerData(){
         for event in events  {
             mapView.delegate = self
-            let latitude:Double = event["Latitude"] as Double
-            let longitude:Double = event["Longitude"] as Double
+            let latitude:Double = event["Latitude"] as! Double
+            let longitude:Double = event["Longitude"] as! Double
             let position = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
             var marker :GMSMarker = GMSMarker(position: position)
-            marker.title = event["Title"] as String
-            let imageData : PFFile = event["Image"] as PFFile
-            imageData.getDataInBackgroundWithBlock({   (imageData: NSData!, error: NSError!) -> Void in
+            marker.title = event["Title"] as! String
+            let imageData : PFFile = event["Image"] as! PFFile
+            imageData.getDataInBackgroundWithBlock({   (imageData, error) -> Void in
                 if !(error != nil) {
-                     marker.userData = UIImage(data:imageData)
+                     marker.userData = UIImage(data:imageData!)
                 }
                 
             })
-            switch (event["Type"]) as String{
+            switch (event["Type"]) as! String{
             case "Sports":
                 marker.icon = UIImage(named: "sportsMarker")
             case "Gaming":
                 marker.icon = UIImage(named: "gamesMarker")
+            case "Pranks":
+                marker.icon = UIImage(named: "pranksMarker")
+            case "Music":
+                marker.icon = UIImage(named: "musicMarker")
             default:
                 marker.icon = UIImage(named: "otherMarker")
             }
@@ -83,12 +109,12 @@ let locationManager =  CLLocationManager()
     }
     
     func mapView(mapView: GMSMapView!, didTapInfoWindowOfMarker marker: GMSMarker!) {
+        performSegueWithIdentifier("mapToEvent", sender: self)
         //Take to event window 
     }
     
     func mapView(mapView: GMSMapView!, markerInfoWindow marker: GMSMarker!) -> UIView! {
-        print("something happened")
-        var infoWindow :CustomInfoWindow = NSBundle.mainBundle().loadNibNamed("eventInfo", owner: self, options: nil)[0] as CustomInfoWindow
+        var infoWindow :CustomInfoWindow = NSBundle.mainBundle().loadNibNamed("eventInfo", owner: self, options: nil)[0] as! CustomInfoWindow
         
         infoWindow.eventTitle.text = marker.title
         infoWindow.eventAttendees.text = "0"
@@ -97,7 +123,6 @@ let locationManager =  CLLocationManager()
     }
     
     func mapView(mapView: GMSMapView!, didTapMarker marker: GMSMarker!) -> Bool {
-        print("did tap called")
         mapView.selectedMarker = marker
         return true
     }
@@ -108,21 +133,12 @@ let locationManager =  CLLocationManager()
     }
     
 
-    func locationManager(manager:CLLocationManager!, didChangeAuthorizationStatus status: CLAuthorizationStatus){
-        if status == .AuthorizedWhenInUse{
-            
-            locationManager.startUpdatingLocation()
-            
-            mapView.myLocationEnabled = true
-            mapView.settings.myLocationButton = true
-        }
-    }
+
     
-    func locationManager(manager:CLLocationManager!, didUpdateLocations locations:[AnyObject]!){
-        if let location = locations.first as? CLLocation{
-            
-            mapView.camera = GMSCameraPosition(target:location.coordinate, zoom:15,bearing:0, viewingAngle:0)
-            locationManager.stopUpdatingLocation()
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if(segue.identifier == "mapToEvent"){
+            var eventViewController : EventViewController = segue.destinationViewController as! EventViewController
+          
         }
     }
     /*

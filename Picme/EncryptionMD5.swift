@@ -12,7 +12,7 @@ import UIKit
     
     extension Int {
         func hexString() -> String {
-            return NSString(format:"%02x", self)
+            return NSString(format:"%02x", self) as String
         }
     }
     
